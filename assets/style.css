@@ -1,0 +1,41 @@
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	background-color: lightslategrey;
+	color: whitesmoke;
+	font-family: 'Happy Monkey';
+}
+.hero-unit {
+	background-color: transparent;
+	margin-bottom: 0px !important;
+	padding-bottom: 20px;
+}
+a {
+	color: #6CF;
+}
+a:hover{
+	color: #0F5172;
+}
+.right {
+	float: right;
+}
+.title {
+	color: white;
+	background: url('Xcode-Icon.png') no-repeat left center;
+	height: 120px;
+	padding-left: 120px;
+}
+.title h1 {
+	line-height: 120px;
+	vertical-align: middle;
+	font-size: 50px;
+}
+.tip {
+	margin-bottom: 20px !important;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.tip code {
+	vertical-align: middle;
+	font-size: 30px;
+	color: black;
+}

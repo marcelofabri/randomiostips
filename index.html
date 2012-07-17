@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Random iOS Tips</title>
+    <meta name="description" content="Useful tips for iOS developers">
+    <meta name="author" content="Marcelo Fabri">
+	<meta property="og:title" content="{{ tip.content|removetags:"a code" }}"/>
+	<meta property="og:site_name" content="Random iOS Tips"/>
+	<meta property="og:url" content="{{ url }}"/>	
+	<meta property="og:image" content="http://www.randomiostips.com/assets/Xcode-Icon.png"/>
+
+    <!-- Le styles -->
+	<link href='http://fonts.googleapis.com/css?family=Happy+Monkey' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <link href="http://current.bootstrapcdn.com/bootstrap-v204/css/bootstrap-combined.min.css" rel="stylesheet">
+	<link href="../assets/style.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-33387978-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+  </head>
+
+  <body>
+    <div class="container">
+
+		<div class="title"><p><h1><b>Random iOS Tips</b></h1></p></div>
+	  	<div class="share right">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ tip.content|removetags:"a code" }}" data-via="randomiOSTips" data-url="{{url}}" data-lang="en">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<iframe src="//www.facebook.com/plugins/like.php?href={{ url }}&amp;send=false&amp;layout=button_count&amp;width=150&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:21px;" allowTransparency="true"></iframe>
+	  </div>
+		
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1 class="tip">{{ tip.content|safe }}</h1>
+		<h3>Permalink to this tip: <a href="{{url}}">{{url}}</a></h3>
+		<br/ >
+		{% if random %}
+		<p>Want to see another random iOS tip? Just <a href="javascript:location.reload(true)">refresh the page!</a></p>
+		{% endif %}
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>Created and maintened by <a href="http://www.marcelofabri.com" target="_blank">Marcelo Fabri</a> (<a href="http://www.twitter.com/marcelofabri_" target="_blank">@marcelofabri_</a>). Want to suggest a tip? Send <a href="mailto:tips@randomiostips.com">an email!</a></p>
+		<p>Powered by <a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap, from Twitter</a></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="//current.bootstrapcdn.com/bootstrap-v204/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+cron:
+- description: daily tweet job
+  url: /tweet
+  schedule: every day 19:40
+  timezone: America/Sao_Paulo
