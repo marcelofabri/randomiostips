@@ -3,7 +3,7 @@ body {
 	padding-bottom: 40px;
 	background-color: lightslategrey;
 	color: whitesmoke;
-	font-family: 'Happy Monkey';
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .hero-unit {
 	background-color: transparent;
@@ -24,6 +24,7 @@ a:hover{
 	background: url('Xcode-Icon.png') no-repeat left center;
 	height: 120px;
 	padding-left: 120px;
+	font-family: 'Happy Monkey', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .title h1 {
 	line-height: 120px;
@@ -32,7 +33,6 @@ a:hover{
 }
 .tip {
 	margin-bottom: 20px !important;
-	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .tip code {
 	vertical-align: middle;

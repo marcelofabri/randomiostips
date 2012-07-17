@@ -22,14 +22,10 @@ from google.appengine.ext.webapp import template
 from django.template import defaultfilters 
 import random
 import tweepy
+from twitter_info import *
+from models import *
 from google.appengine.api import memcache
 
-
-
-class Tip(db.Model):
-	content = db.StringProperty()
-	tweeted = db.BooleanProperty()
-	hash = db.StringProperty()
 
 class MainHandler(webapp2.RequestHandler):
 	def get(self, hash = None):
@@ -72,11 +68,6 @@ class PostHandler(webapp2.RequestHandler):
 		
 class TweetHandler(webapp2.RequestHandler):
 	def get(self):
-		
-		consumer_key="Insert consumer key here"
-		consumer_secret="Insert consumer secret here"
-		access_token="Insert access token here"
-		access_token_secret="Insert access token secret here"
 
 		auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 		auth.set_access_token(access_token, access_token_secret)
