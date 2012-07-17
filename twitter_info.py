@@ -1,6 +1,6 @@
 #insert your twitter data here
 
-consumer_key=""
-consumer_secret=""
-access_token=""
-access_token_secret=""
+consumer_key="KpCku2D16iReqNoRwuWVw"
+consumer_secret="pmhYQkuZkY5fSfDDFKPje9u6JryzIJjHtEUOjXIw"
+access_token="635211882-MrtTNjILylruhQjvnyas4W7Hh1l5lzSa9soMiDx4"
+access_token_secret="dCfgiLZaExZWagfXbWwtvghDHhAofkS5gTmgt7zxE"
